@@ -120,7 +120,7 @@ class _AiBotScreenState extends State<AiBotScreen> {
                         child: Row(
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: [
-                            const Icon(LucideIcons.playCircle, color: Colors.purple, size: 20),
+                            const Icon(LucideIcons.circlePlay, color: Colors.purple, size: 20),
                             const SizedBox(width: 10),
                             Text(
                               'Start AI Practice Session (${state.aiGeneratedQuestions.length} Qs)',
