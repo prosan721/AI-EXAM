@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:lucide_icons/lucide_icons.dart';
+import 'package:lucide_icons_flutter/lucide_icons.dart';
 import '../../core/network/app_cubit.dart';
 
 class YearSelectScreen extends StatefulWidget {
@@ -202,7 +202,7 @@ class _YearSelectScreenState extends State<YearSelectScreen> {
                 _buildFeatureCard(
                   title: 'Performance Analysis',
                   desc: 'Track your progress and improve',
-                  icon: LucideIcons.barChart,
+                  icon: LucideIcons.chartBar,
                   color: const Color(0xFF10B981),
                   onTap: () {
                     context.read<AppCubit>().showScreen('HOME');

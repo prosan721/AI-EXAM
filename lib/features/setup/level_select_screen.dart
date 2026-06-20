@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:lucide_icons/lucide_icons.dart';
+import 'package:lucide_icons_flutter/lucide_icons.dart';
 import '../../core/network/app_cubit.dart';
 
 class LevelSelectScreen extends StatefulWidget {
@@ -112,7 +112,7 @@ class _LevelSelectScreenState extends State<LevelSelectScreen> {
                             child: _buildStatMiniCard(
                               value: _selectedLevel == 'Graduation' ? '5000+' : '4000+',
                               label: 'Total Questions',
-                              icon: LucideIcons.helpCircle,
+                              icon: LucideIcons.circleHelp,
                               color: Colors.amber[700]!,
                             ),
                           ),

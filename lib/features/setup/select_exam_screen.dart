@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:lucide_icons/lucide_icons.dart';
+import 'package:lucide_icons_flutter/lucide_icons.dart';
 import '../../core/network/app_cubit.dart';
 import '../../core/network/exam_db.dart';
 
@@ -219,13 +219,13 @@ class SelectExamScreen extends StatelessWidget {
       case 'shield': return LucideIcons.shield;
       case 'userCheck': return LucideIcons.userCheck;
       case 'settings': return LucideIcons.settings;
-      case 'train': return LucideIcons.train;
+      case 'train': return LucideIcons.trainFront;
       case 'users': return LucideIcons.users;
       case 'database': return LucideIcons.database;
       case 'plane': return LucideIcons.plane;
       case 'compass': return LucideIcons.compass;
       case 'activity': return LucideIcons.activity;
-      case 'barChart': return LucideIcons.barChart;
+      case 'barChart': return LucideIcons.chartBar;
       case 'fileText': return LucideIcons.fileText;
       default: return LucideIcons.file;
     }

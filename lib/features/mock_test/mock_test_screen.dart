@@ -1,7 +1,7 @@
 import 'dart:math' as math;
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:lucide_icons/lucide_icons.dart';
+import 'package:lucide_icons_flutter/lucide_icons.dart';
 import 'package:percent_indicator/circular_percent_indicator.dart';
 import '../../core/network/app_cubit.dart';
 import '../../core/network/exam_db.dart';

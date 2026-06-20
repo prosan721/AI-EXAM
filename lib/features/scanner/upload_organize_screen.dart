@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:lucide_icons/lucide_icons.dart';
+import 'package:lucide_icons_flutter/lucide_icons.dart';
 import '../../core/network/app_cubit.dart';
 import '../../core/theme/app_theme.dart';
 
@@ -334,11 +334,11 @@ class UploadOrganizeScreen extends StatelessWidget {
             // Stats breakdown
             _buildSummaryStatRow(LucideIcons.fileText, 'Total Papers', '4'),
             const Divider(),
-            _buildSummaryStatRow(LucideIcons.helpCircle, 'Total Questions', '480'),
+            _buildSummaryStatRow(LucideIcons.circleHelp, 'Total Questions', '480'),
             const Divider(),
             _buildSummaryStatRow(LucideIcons.layers, 'Detected Subjects', '6'),
             const Divider(),
-            _buildSummaryStatRow(LucideIcons.checkSquare, 'Organization Accuracy', '98%'),
+            _buildSummaryStatRow(LucideIcons.squareCheck, 'Organization Accuracy', '98%'),
             
             const SizedBox(height: 32),
 

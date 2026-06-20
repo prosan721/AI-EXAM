@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:lucide_icons/lucide_icons.dart';
+import 'package:lucide_icons_flutter/lucide_icons.dart';
 import '../../core/network/app_cubit.dart';
 import '../../core/network/exam_db.dart';
 
@@ -265,7 +265,7 @@ class HomeScreen extends StatelessWidget {
   IconData _getIconData(String name) {
     switch (name) {
       case 'award': return LucideIcons.award;
-      case 'train': return LucideIcons.train;
+      case 'train': return LucideIcons.trainFront;
       case 'plane': return LucideIcons.plane;
       case 'layers': return LucideIcons.layers;
       default: return LucideIcons.award;
