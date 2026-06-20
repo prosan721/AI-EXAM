@@ -25,7 +25,7 @@ jobs:
         uses: actions/setup-java@v4
         with:
           distribution: 'temurin'
-          java-version: '21'
+          java-version: '17'
 
       # 3. Setup Flutter
       - name: Setup Flutter
@@ -35,20 +35,31 @@ jobs:
           channel: 'stable'
           cache: true
 
-      # 4. Get Flutter dependencies
+      # 4. Cache Gradle dependencies (saves SSD & speeds up builds)
+      - name: Cache Gradle packages
+        uses: actions/cache@v4
+        with:
+          path: |
+            ~/.gradle/caches
+            ~/.gradle/wrapper
+          key: ${{ runner.os }}-gradle-${{ hashFiles('**/*.gradle*', '**/gradle-wrapper.properties') }}
+          restore-keys: |
+            ${{ runner.os }}-gradle-
+
+      # 5. Get Flutter dependencies
       - name: Install Flutter Dependencies
         run: flutter pub get
 
-      # 5. Analyze code (optional but good practice)
+      # 6. Analyze code
       - name: Analyze Code
         run: flutter analyze --no-fatal-infos
         continue-on-error: true
 
-      # 6. Build release APK
+      # 7. Build release APK
       - name: Build APK (Release)
         run: flutter build apk --release --split-per-abi
 
-      # 7. Upload APK as artifact
+      # 8. Upload APK as artifact
       - name: Upload APK Artifact
         uses: actions/upload-artifact@v4
         with:
@@ -59,7 +70,7 @@ jobs:
             build/app/outputs/flutter-apk/app-x86_64-release.apk
           retention-days: 30
 
-      # 8. Create GitHub Release on tag push
+      # 9. Create GitHub Release on tag push
       - name: Create GitHub Release
         if: startsWith(github.ref, 'refs/tags/')
         uses: softprops/action-gh-release@v2
