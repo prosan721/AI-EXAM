@@ -1,0 +1,64 @@
+# Miscellaneous
+*.class
+*.log
+*.pyc
+*.swp
+.DS_Store
+.atom/
+.buildlog/
+.history
+.project
+.directory
+
+# IntelliJ Related
+*.iml
+*.ipr
+*.iws
+.idea/
+
+# The Flutter tool metadata
+.dart_tool/
+.flutter-plugins
+.flutter-plugins-dependencies
+.packages
+.pub-cache/
+.pub/
+/build/
+
+# Symbol files
+*.pdb
+
+# Android related
+**/doc/api/
+**/metadata
+.gradle/
+/android/local.properties
+/android/app/key.properties
+/android/app/src/main/res/values/strings.xml
+/android/app/src/main/res/values/key.properties
+
+# iOS related
+**/ios/Flutter/.last_build_id
+**/ios/Flutter/EphemeralWorkspace.xcworkspace
+**/ios/Flutter/Generated.xcconfig
+**/ios/Flutter/flutter_export_environment.sh
+**/ios/Flutter/flutter_tools_metadata.xml
+**/ios/Runner/GeneratedPluginRegistrant.h
+**/ios/Runner/GeneratedPluginRegistrant.m
+**/ios/Runner/Assets.xcassets/AppIcon.appiconset/Contents.json
+**/ios/Runner/Assets.xcassets/LaunchImage.imageset/Contents.json
+**/ios/Runner/Assets.xcassets/LaunchImage.imageset/LaunchImage.png
+**/ios/Runner/Assets.xcassets/LaunchImage.imageset/LaunchImage@2x.png
+**/ios/Runner/Assets.xcassets/LaunchImage.imageset/LaunchImage@3x.png
+
+# Windows related
+/windows/flutter/ephemeral/
+
+# macOS related
+/macos/Flutter/ephemeral/
+
+# Linux related
+/linux/flutter/ephemeral/
+
+# Web related
+/web/flutter_bootstrap.js
