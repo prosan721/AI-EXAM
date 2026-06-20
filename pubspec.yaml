@@ -38,8 +38,9 @@ dependencies:
   # Third party dependencies for State Management, Database, Storage, AI, UI
   flutter_bloc: ^8.1.6
   supabase_flutter: ^2.6.0
-  firebase_core: ^3.1.0
-  firebase_storage: ^12.1.0
+  # Firebase packages: add back after configuring real google-services.json from Firebase Console
+  # firebase_core: ^3.1.0
+  # firebase_storage: ^12.1.0
   google_generative_ai: ^0.4.0
   file_picker: ^8.0.0
   lucide_icons_flutter: ^3.1.14+2
